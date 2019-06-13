@@ -3,7 +3,7 @@ Code Challenge
   Name: 
     Create a list of absentee
   Filename: 
-    absentee.py
+    absentee_students.py
   Problem Statement:
     Make a program that create a file absentee.txt
     The program should take max 25 students name one by one
@@ -18,12 +18,12 @@ file.close()
 
 with open('absent_students.txt','a') as file:
     for i in range(25):
-        absent_student_name = raw_input("Enter the absent student name: ")
+        absent_student_name = input("Enter the absent student name: ")
         if absent_student_name=="":
             break
         file.write(absent_student_name+'\n')
         
 
 file = open('absent_students.txt','r')
-print file.readlines()
+print (file.readlines())
     
